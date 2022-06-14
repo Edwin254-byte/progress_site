@@ -1,44 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title>Beren LLC</title>
+    <link rel="stylesheet" href="css/beren_reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
   </head>
+
   <body>
-    <section class="card-container">
-      <section class="card">
-        <div class="card__intro">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est
-            minima impedit repudiandae, sapiente voluptate.
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            illo? Voluptatem dolore incidunt illum fugiat neque alias iste
-            quidem quae soluta. Sequi dignissimos doloribus hic repellendus odio
-            dolores dicta officia temporibus mollitia sed inventore labore natus
-            eius, explicabo expedita nostrum vitae, dolor, quod ut ipsam maiores
-            incidunt asperiores! Consequuntur, placeat.
-          </p>
+    <header>
+      <img src="image\beren.jpg" class="logo" />
+
+      <nav>
+        <div class="toggle">
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="white"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
         </div>
-        <div class="card__content">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est
-            minima impedit repudiandae, sapiente voluptate.
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            illo? Voluptatem dolore incidunt illum fugiat neque alias iste
-            quidem quae soluta. Sequi dignissimos doloribus hic repellendus odio
-            dolores dicta officia temporibus mollitia sed inventore labore natus
-            eius, explicabo expedita nostrum vitae, dolor, quod ut ipsam maiores
-            incidunt asperiores! Consequuntur, placeat.
-          </p>
-        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About-Us</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="application.html">Application</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <article>
+          <h3>Beren Software Development</h3>
+          <p>The place where developers are made</p>
+        </article>
+        <article class="progress-contact">
+          <p>Progress</p>
+          <p>Contact Us</p>
+        </article>
       </section>
-    </section>
+
+      <section class="info">
+        <article id="teams">
+          <img src="" />
+          <h3>Teams</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy.
+          </p>
+        </article>
+        <article id="projects">
+          <img src="" />
+          <h3>Projects</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy.
+          </p>
+        </article>
+
+        <article id="about">
+          <img src="" />
+          <h3>About</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy.
+          </p>
+        </article>
+
+        <article id="teams">
+          <img src="" />
+          <h3>Join</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy.
+          </p>
+        </article>
+
+        <article id="challenge">
+          <img src="" />
+          <h3>Challenges</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <section class="social-links">
+          <h2>Follow</h2>
+          <ul>
+            <li><a href="linkedin.com">Linked In</a></li>
+            <li><a href="facebook.com">Facebook</a></li>
+            <li><a href="instagram.com">Instagram</a></li>
+            <li><a href="twitter.com">Twitter</a></li>
+          </ul>
+        </section>
+
+        <section class="contact">
+          <h2>Contact Us</h2>
+          <ul>
+            <li><a href="mailto:berenllc@gmail.com">Email</a></li>
+            <li><a href="tel:074778939939">Call Us</a></li>
+          </ul>
+        </section>
+
+        <section class="visit">
+          <h2>Visit</h2>
+          <ul>
+            <p>Beren LLC</p>
+            <p>34 Beren, 100</p>
+            <p>Eldoret, Uashin Gishu, Kenya</p>
+          </ul>
+        </section>
+      </section>
+      <p class="copyright">&copy;2022 Beren. All rights reserved.</p>
+    </footer>
   </body>
 </html>
