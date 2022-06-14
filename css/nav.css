@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #27283c;
+    padding: 1.5rem 1rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 10%;
+    height: 5%;
+}
+
+nav ul li a:hover {
+    color: #ba54f5;
+}
+
+.toggle {
+    text-align: right;
+    display: none;
+}
+
+@media(max-width:952px) {
+    .toggle {
+        display: block;
+    }
+    nav ul {
+        width: 100%;
+        display: none;
+    }
+    nav ul li {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5px;
+    }
+    .active {
+        display: block;
+    }
+}
