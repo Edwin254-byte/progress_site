@@ -18,8 +18,9 @@ body {
 /* card component */
 .card {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(100px, auto);
+  padding: 4rem;
   color: #ffffff;
 }
 .card:nth-child(odd) {
@@ -43,7 +44,7 @@ body {
 .card__content {
   grid-column: 2 / span end;
   grid-row: 1/2;
-  padding-left: 10px;
+  padding: 2rem;
   margin: 10px 30px 10px 5px;
 }
 /* github and live demo buttons */
@@ -73,7 +74,7 @@ body {
 /* project image  */
 .card__content__img {
   width: 100%;
-  height: 60vh;
+  /* height: 60vh; */
   transition: all;
   margin-top: 10px;
 }
@@ -152,4 +153,8 @@ body {
     width: 100px;
     height: 100px;
   }
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
