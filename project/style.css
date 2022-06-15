@@ -22,6 +22,7 @@ body {
   grid-auto-rows: minmax(100px, auto);
   padding: 4rem;
   color: #ffffff;
+  transition: transform 1s, opacity 1s;
 }
 .card:nth-child(odd) {
   background-color: #27283c;
@@ -154,7 +155,11 @@ body {
     height: 100px;
   }
 }
-.reveal.active {
+/* .reveal.active {
   transform: translateY(0);
   opacity: 1;
+} */
+.card--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
