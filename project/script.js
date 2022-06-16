@@ -1,20 +1,3 @@
-/* function reveal() {
-  var reveals = document.querySelector(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
- */
-
 //reveal effect
 const container = document.getElementById("card-container");
 const cards = document.querySelectorAll(".card");
@@ -32,13 +15,10 @@ cards.forEach((card) => {
   cardObserver.observe(card);
 });
 
-/* //alternating effect
-const cardIntros = document.querySelectorAll(".card__intro");
-const cardContents = document.querySelectorAll(".card__content");
-console.log(cardContents);
-console.log(cardIntros);
-cardIntros.forEach((el, i) => {
+// DIV alternating effect
+cards.forEach(function (card, i) {
   if (i % 2 == 1) {
-    el.innerHTML = "";
+    card.querySelector(".card__intro").classList.add("card__intro-reverse");
+    card.querySelector(".card__content").classList.add("card__content-reverse");
   }
-}); */
+});

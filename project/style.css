@@ -97,6 +97,20 @@ body {
   cursor: pointer;
 }
 
+/* interchange effect */
+.card__intro-reverse {
+  grid-column: 2 / span end;
+}
+.card__content-reverse {
+  grid-column: 1;
+}
+
+/* reveal effect */
+.card--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 /* media queries */
 /* very large screens */
 @media only screen and (max-width: 1100px) {
@@ -154,12 +168,4 @@ body {
     width: 100px;
     height: 100px;
   }
-}
-/* .reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-} */
-.card--hidden {
-  opacity: 0;
-  transform: translateY(8rem);
 }
