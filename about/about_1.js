@@ -10,6 +10,7 @@ const contentContainer = document.querySelector(".objectives__content");
 //adding event lister to buttons using delegation
 btnContainer.addEventListener("click", function (e) {
   console.log(e.target);
+  // matching
   if (e.target.classList.contains("link--btns")) {
     const clicked = e.target;
     //removing active tabs
@@ -23,4 +24,22 @@ btnContainer.addEventListener("click", function (e) {
       .querySelector(`.objectives--${clicked.dataset.tab}`)
       .classList.remove("objectives__hidden");
   }
+});
+
+//reveal effect using intersection observer
+const sections = document.querySelectorAll("section");
+
+const observeSection = function (entries, observer) {
+  const [entry] = entries;
+  //guard clause
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+const sectionObserver = new IntersectionObserver(observeSection, {
+  root: null,
+  threshold: 0.15,
+});
+sections.forEach((section) => {
+  sectionObserver.observe(section);
 });
